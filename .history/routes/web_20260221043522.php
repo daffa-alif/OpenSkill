@@ -60,5 +60,5 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/seminar', [SeminarController::class, 'index'])->name('seminar');
 
-    Route::get('/explore', [ExplorerController::class, 'index'])->name('explore');
+    Route::get('/explore', [])
 });

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{AuthController, SeminarController, WebinarController, ExploreController};
+use App\Http\Controllers\{AuthController, SeminarController, WebinarController};
 
 /*
 |--------------------------------------------------------------------------
@@ -56,9 +56,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])
         ->name('logout');
 
-    Route::get('/webinar', [WebinarController::class, 'index'])->name('webinar');
+    Route::get('/webinar', [WebinarController::class, 'index'])->name('webinar')
 
-    Route::get('/seminar', [SeminarController::class, 'index'])->name('seminar');
+    Route::get('/seminar', [SeminarController::class, 'index']){->name('seminar');
+    }
 
-    Route::get('/explore', [ExplorerController::class, 'index'])->name('explore');
+    
 });
