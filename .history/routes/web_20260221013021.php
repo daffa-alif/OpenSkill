@@ -18,9 +18,8 @@ use App\Http\Controllers\AuthController;
 // Root redirect
 // ──────────────────────────────────────────────
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
-
 
 // ──────────────────────────────────────────────
 // Guest routes (only accessible when NOT logged in)

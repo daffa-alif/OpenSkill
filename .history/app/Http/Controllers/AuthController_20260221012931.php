@@ -156,10 +156,9 @@ class AuthController extends Controller
         // Redirect to profile welcome page after update
         return redirect()->route('profile.welcome')->with('success', 'Profile updated successfully.');
     }
+}
 
-    public function welcome()
+public function welcome()
 {
     return view('profile.welcome');
 }
-}
-
