@@ -195,11 +195,11 @@
 
       <!-- Nav links (desktop) -->
       <div class="hidden md:flex items-center gap-8 text-sm text-gray-400 font-body">
-        <a href="{{route('login')}}" class="hover:text-white transition-colors">Eksplorasi</a>
-        <a href="{{route('login')}}" class="hover:text-white transition-colors">Webinar</a>
-        <a href="{{route('login')}}" class="hover:text-white transition-colors">Seminar</a>
-        <a href="{{route('login')}}" class="hover:text-white transition-colors">Komunitas</a>
-        <a href="{{route('login')}}" class="hover:text-white transition-colors">Instruktur</a>
+        <a href="{{route''}}" class="hover:text-white transition-colors">Eksplorasi</a>
+        <a href="{{route''}}" class="hover:text-white transition-colors">Webinar</a>
+        <a href="{{route''}}" class="hover:text-white transition-colors">Seminar</a>
+        <a href="{{route''}}" class="hover:text-white transition-colors">Komunitas</a>
+        <a href="{{route''}}" class="hover:text-white transition-colors">Instruktur</a>
       </div>
 
       <!-- CTA -->

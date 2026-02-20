@@ -348,7 +348,7 @@
         <h3 class="font-display font-bold text-xl mb-1">Siap belajar hal baru?</h3>
         <p class="font-body text-sm text-gray-500">Jelajahi ratusan webinar gratis dari instruktur terbaik.</p>
       </div>
-      <a href="{{ route('explore') }}" class="btn-primary px-7 py-3 rounded-xl text-white font-display font-semibold text-sm whitespace-nowrap flex items-center gap-2">
+      <a href="{{ route('explore.index') }}" class="btn-primary px-7 py-3 rounded-xl text-white font-display font-semibold text-sm whitespace-nowrap flex items-center gap-2">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
         Eksplorasi Event
       </a>

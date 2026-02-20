@@ -143,7 +143,7 @@
       ] as $live)
         <div class="h-scroll-card content-card card-glass rounded-2xl p-5 w-64" style="border:1px solid rgba(255,255,255,0.06);">
           <div class="h-28 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden"
-               style="background:linear-gradient(135deg,{{ $live[3] }}22,{{ $live[3] }}08);">
+               style="background:linear-gradient(135deg{{ $live[3] }}22,{{ $live[3] }}08);">
             <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background:{{ $live[3] }}25;border:1.5px solid {{ $live[3] }}55;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{{ $live[3] }}" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
             </div>

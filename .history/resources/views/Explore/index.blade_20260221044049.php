@@ -186,7 +186,7 @@
         ['📱','Mobile Dev','14 event','rgba(6,182,212','#67e8f9','mobile'],
         ['🔐','Cybersecurity','8 event','rgba(124,58,237','#c4b5fd','keamanan'],
       ] as $cat)
-        <a href="{{ route('webinar') }}?cat={{ $cat[5] }}"
+        <a href="{{ route('webinar.index') }}?cat={{ $cat[5] }}"
            class="cat-card card-glass rounded-2xl p-5 text-center reveal"
            style="border:1px solid rgba(255,255,255,0.06);">
           <div class="cat-icon w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3 text-2xl"
@@ -234,7 +234,7 @@
           <div class="text-sm font-body text-gray-500">4 pembicara · <span style="color:#f59e0b;">350 / 500 kursi</span> terisi</div>
         </div>
         <div class="flex flex-wrap items-center gap-4">
-          <a href="{{ route('seminar') }}" class="btn-primary px-8 py-3.5 rounded-xl text-white font-display font-bold flex items-center gap-2">
+          <a href="{{ route('seminar.index') }}" class="btn-primary px-8 py-3.5 rounded-xl text-white font-display font-bold flex items-center gap-2">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
             Daftar Sekarang — Gratis
           </a>
@@ -259,8 +259,8 @@
         <h2 class="font-display font-bold text-2xl">Minggu Ini</h2>
       </div>
       <div class="flex gap-2">
-        <a href="{{ route('webinar') }}" class="btn-ghost px-4 py-2 rounded-lg font-body text-sm text-gray-500">Webinar</a>
-        <a href="{{ route('seminar') }}" class="btn-ghost px-4 py-2 rounded-lg font-body text-sm text-gray-500">Seminar</a>
+        <a href="{{ route('webinar.index') }}" class="btn-ghost px-4 py-2 rounded-lg font-body text-sm text-gray-500">Webinar</a>
+        <a href="{{ route('seminar.index') }}" class="btn-ghost px-4 py-2 rounded-lg font-body text-sm text-gray-500">Seminar</a>
       </div>
     </div>
 
@@ -357,7 +357,7 @@
         <p class="section-label mb-1">On Demand</p>
         <h2 class="font-display font-bold text-2xl">Rekaman Terbaru</h2>
       </div>
-      <a href="{{ route('webinar') }}?status=recorded" class="btn-ghost px-4 py-2 rounded-lg font-body text-sm text-gray-500">Lihat semua →</a>
+      <a href="{{ route('webinar.index') }}?status=recorded" class="btn-ghost px-4 py-2 rounded-lg font-body text-sm text-gray-500">Lihat semua →</a>
     </div>
 
     <div class="h-scroll">
@@ -412,7 +412,7 @@
         </p>
         <div class="flex flex-wrap items-center justify-center gap-4">
           @auth
-            <a href="{{ route('webinar') }}" class="btn-primary px-10 py-4 rounded-2xl text-white font-display font-bold text-base">
+            <a href="{{ route('webinar.index') }}" class="btn-primary px-10 py-4 rounded-2xl text-white font-display font-bold text-base">
               Jelajahi Webinar →
             </a>
           @else
@@ -436,8 +436,8 @@
 <script>
   function heroSearch(val) {
     if (!val.trim()) return;
-    // Could redirect to webinar with search param
-    // window.location.href = "{{ route('webinar') }}?q=" + encodeURIComponent(val);
+    // Could redirect to webinar index with search param
+    // window.location.href = "{{ route('webinar.index') }}?q=" + encodeURIComponent(val);
   }
 
   // Keyboard shortcut ⌘K / Ctrl+K focus search
