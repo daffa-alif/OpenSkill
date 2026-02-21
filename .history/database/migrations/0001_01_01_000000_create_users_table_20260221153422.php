@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string('profile_picture')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('identifier_number')->nullable()->comment('NIM untuk mahasiswa, NIP/Kode Unit untuk panitia');
             $table->enum('role', ['student', 'organizer', 'campus_admin'])->default('student');
             $table->string('password');
             $table->rememberToken();
